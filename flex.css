@@ -1,0 +1,120 @@
+/* This will set all my margins and padding to 0 and border box will keep everything within */
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ------------ */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+}
+button {
+  font-family: 'Poppins', sans-serif;
+}
+/* -----------------Header------------------- */
+header {
+  display: flex;
+
+  /* When is set the width to 90% the margin needs to be auto so both ends match  */
+  margin: auto;
+  width: 90%;
+  height: 10vh;
+  align-items: center;
+}
+
+/* -----------------Header------------------- */
+.name {
+  flex: 1;
+
+  font-weight: 400;
+  margin: 5px;
+}
+nav {
+  flex: 2;
+}
+
+/* ------UL--- */
+.nav-links {
+  display: flex;
+  /* justify-content: will give sapce around the elements  */
+  justify-content: space-around;
+  /* list style is removing the bulleted point */
+  list-style: none;
+}
+/* ------UL--- */
+
+/* -------------li----- */
+.nav-link {
+  color: #5f5f79;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* -------------li----- */
+
+/* 
+  -----Main---- */
+
+.myIntro {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.cover img {
+  height: 30vh;
+}
+.cover {
+  flex: 1;
+}
+
+.introduction {
+  flex: 1;
+}
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  /* weput a color in the back and then used transparent to pull from back; */
+  background: linear-gradient(to right, #000001, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-text h3 {
+  font-size: 24px;
+  font-weight: 200;
+  /* weput a color in the back and then used transparent to pull from back; */
+  background: linear-gradient(to right, #5e5e65, #7b7b88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
+}
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+
+.cta-select {
+  border: 2px solid #c36cbb;
+
+  background: transparent;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  color: #c36cbb;
+}
+/* 
+  -----Main---- */
